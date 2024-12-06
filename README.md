@@ -31,3 +31,5 @@ kmgraph_builder.py, will first test the access to neo4j. What's important is tha
 Review the code for kmgraph_builder.py, its documented well. 
 Thereafter you can run it. 
 
+clusterSimilarMovies.py picks-up from where the RAG has completed its job. This script extracts, movie title, its plot and genre from Neo4J and then calls Qwen
+to extract their embedding. The embeddings are stored back into neo4j for each movie. Thereafter kmeans is used to cluster similar movies together. The code is documented well.
